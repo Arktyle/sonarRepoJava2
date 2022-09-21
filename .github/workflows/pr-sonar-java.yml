@@ -1,5 +1,8 @@
 name: Pull request sonar java
 on: 
+  push:
+    branches:
+      - main
   workflow_call:   
     secrets:
       SONARQUBE_DEV_URL:
