@@ -43,13 +43,12 @@ jobs:
           echo ${{ github.ref }}
           tree
       
-      - uses: actions/checkout@v2
-        with:
-          repository: 'Blue-Express/bx_templates'
-          path: 'templates'
-          ref: 'refs/heads/blue'
+#       - uses: actions/checkout@v2
+#         with:
+#           repository: 'Blue-Express/bx_templates'
+#           path: 'templates'
+#           ref: 'refs/heads/blue'
 #           token: ${{ secrets.TOKEN_REPO_TEMPLATE }}
-          token: sonarRepoJava2
       
       - name: Break Build Quality Gate
         run: |
